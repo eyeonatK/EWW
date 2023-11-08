@@ -1,0 +1,70 @@
+.game {
+    background-color: #fff;
+    padding: 40px; /* 패딩을 늘림 */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 40px; /* topnav와의 간격 조정 */
+}
+
+.question {
+    font-size: 28px; /* 폰트 크기를 늘림 */
+    font-weight: bold;
+    margin-bottom: 30px; /* 마진을 늘림 */
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; /* 마진을 늘림 */
+}
+
+.choices button {
+    padding: 15px 25px; /* 패딩을 늘림 */
+    font-size: 18px; /* 폰트 크기를 늘림 */
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+
+.choices button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #4CAF50;
+}
+
+.choices button[disabled] {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+/* 진행바 스타일 */
+.progress-container {
+    width: 90%;
+    background-color: #000000c0;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 0%;  /* 초기 상태에서는 0%로 설정 */
+    height: 30px;
+    background-color: #23fa2a;
+    transition: width 0.5s ease-in-out;  /* 이 부분을 추가합니다 */
+}
+
+.progress {
+    height: 100%; /* 높이 */
+    width: 0%; /* 초기 너비 */
+    background-color: #76c7c0; /* 바의 색상 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    text-align: center; /* 텍스트 정렬 */
+    line-height: 30px; /* 텍스트 수직 정렬 */
+    color: white; /* 텍스트 색상 */
+}

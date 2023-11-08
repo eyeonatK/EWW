@@ -1,0 +1,121 @@
+
+body {
+    background-image: url('img/estee-janssens-2enBTsIVhUU-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.maincontents {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0B50A2;
+    overflow: hidden;
+    width: calc(100% - 28px);
+    top: 0; /* 상단에 위치 */
+    padding: 14px 14px;
+    text-align: left;
+
+}
+
+.dictionary {
+    background-color: #fff;
+    padding: 40px; /* 패딩을 늘림 */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 60px; /* topnav와의 간격 조정 */
+}
+
+
+
+#nextBtn {
+    background-color: #008CBA;
+    color: white;
+    padding: 15px 25px; /* 패딩을 늘림 */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    float: right;
+}
+
+#nextBtn:hover {
+    background-color: #007B9A;
+}
+
+.game-complete {
+    font-size: 28px; /* 폰트 크기를 늘림 */
+    color: #D32F2F;
+    margin-bottom: 20px;
+}
+
+
+.topnav a {
+    flex-grow: 1;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #00ff33;
+    color: black;
+}
+
+.topnav .logout {
+    
+    float: right;
+    margin-right: 10px;
+}
+
+.topnav .logout button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+
+.topnav .logout:hover {
+    background-color: #00ff33;
+    color: black;
+}
+
+.chapter a {
+    display: block;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #f1f1f1; 
+
+}
+
+.chapter a:hover {
+    color: black;
+}
+.content {
+    background-color: #fff;
+    padding: 20px; /* 패딩을 늘림 */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px; /* topnav와의 간격 조정 */
+}
